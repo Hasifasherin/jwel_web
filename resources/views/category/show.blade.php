@@ -17,48 +17,119 @@
 
         if($slug == 'all'){
             $products = [
-                ['bracelet.png','₹5,000'],
-                ['bracelet1.jpg','₹5,000'],
-                ['new1.jpg','₹5,000'],
-                ['chain1.png','₹12,000'],
-                ['chain.png','₹12,000'],
-                ['chain2.jpg','₹12,000'],
-                ['new2.jpg','₹12,000'],
-                ['chains.jpg','₹12,000'],
-                ['ring.png','₹15,000'],
-                ['new4.jpg','₹8,500'],
-                ['sted.png','₹8,500'],
-                ['earrings.jpg','₹8,500'],
+                ['279.jpeg','₹279'],
+                ['bangles319.png','₹319'],
+                ['chain329.png','₹329'],
+                ['ring1.jpeg','₹159'],
+                ['259.jpeg','₹259'],
+                ['braclet239.png','₹239'],
+                ['chains259.png','₹259'],
+                ['ring2.jpeg','₹159'],
+                ['329.jpeg','₹329'],
+                ['ban349.jpeg','₹349'],
+                ['chain-289.png','₹289'],
+                ['ring3.jpeg','₹159'],
+                ['359.jpeg','₹359'],
+                ['bangle.jpeg','₹299'],
+                ['259.1.jpeg','₹259'],
+                ['ring4.jpeg','₹159'],
+                ['279.1.jpeg','₹279'],
+                ['bracelte329.png','₹329'],
+                ['259.3.jpeg','₹259'],
+                ['ring5.jpeg','₹159'],
+                ['259.4.jpeg','₹259'],
+                ['ban359.jpeg','₹359'],
+                ['a.jpeg','₹359'],
+                ['ring6.jpeg','₹159'],
+                ['b359.jpeg','₹359'],
+                ['3.jpeg','₹319'],
+                ['chain259.png','₹259'],
+                ['1.jpeg','₹319'],
+                ['chain329.jpeg','₹329'],
+                ['2.jpeg','₹319'],
+                ['chain319.png','₹319'],
+                ['119.jpeg','₹119'],
+                ['chain-earing.png','₹359'],
+                ['189.1.jpeg','₹189'],
+                ['bang329.jpeg','₹329'],
+                ['ring189.jpeg','₹259'],
+                ['anklets.jpeg','₹400'],
+                ['anklet400.png','₹400']
             ];
         }
 
         elseif($slug == 'bracelet'){
             $products = [
-                ['bracelet1.jpg','₹5,000'],
-                ['bracelet.png','₹5,000'],
-                ['new1.jpg','₹5,000'],
+                ['braclet239.png','₹239'],
+                ['bracelte329.png','₹329'],
+                
             ];
         }
 
         elseif($slug == 'chain'){
             $products = [
-                ['chain1.png','₹12,000'],
-                ['chains.jpg','₹12,000'],
-                ['chain2.jpg','₹12,000'],
-                ['new2.jpg','₹12,000'],
+                ['279.jpeg','₹279'],
+                 ['chain329.png','₹329'],
+                ['chains259.png','₹259'],
+                ['chain-289.png','₹289'],
+                ['259.jpeg','₹259'],
+                ['359.jpeg','₹359'],
+                ['259.1.jpeg','₹259'],
+                ['279.1.jpeg','₹279'],
+                ['329.jpeg','₹329'],
+                ['259.3.jpeg','₹259'],
+                ['259.4.jpeg','₹259'],
+                ['a.jpeg','₹359'],
+                ['b359.jpeg','₹359'], 
+                ['chain259.png','₹259'],
+                ['chain329.jpeg','₹329'],
+                ['chain319.png','₹319'], 
+                ['chain-earing.png','₹359'],
+                
+
+
             ];
         }
+        elseif($slug == 'bangles'){
+            $products = [
+                 ['bangles319.png','₹319'],
+                 ['bangle319.png','₹319'],
+                ['ban349.jpeg','₹349'],
+                 ['ban359.jpeg','₹359'],
+                 ['3.jpeg','₹319'],
+                ['bangle.jpeg','₹299'],
+                 ['bang329.jpeg','₹329'],
+                 ['1.jpeg','₹319'],
+                 ['2.jpeg','₹319'],
+                 
+            ];
+        }
+
         elseif($slug == 'finger-ring'){
             $products = [
-                ['ring.png','₹15,000'],
+                 ['119.jpeg','₹119'],
+                 ['189.1.jpeg','₹189'],
+                ['ring189.jpeg','₹259'],
+                ['ring1.jpeg','₹159'],
+                ['ring2.jpeg','₹159'],
+                ['ring3.jpeg','₹159'],
+                ['ring4.jpeg','₹159'],
+                ['ring5.jpeg','₹159'],
+                ['ring6.jpeg','₹159'],
+                
+            ];
+        }
+        elseif($slug == 'Anklet'){
+            $products = [
+                ['anklets.jpeg','₹400'],
+                ['anklet400.png','₹400'],
+
             ];
         }
 
         elseif($slug == 'earrings'){
             $products = [
-                ['new4.jpg','₹8,500'],
-                ['sted.png','₹8,500'],
-                ['earrings.jpg','₹8,500'],
+
             ];
         }
         @endphp
@@ -71,7 +142,7 @@
                          alt="Jewellery Product">
 
                     <div class="card-body text-center">
-                        <p class="text-danger fw-bold mb-0 fs-5">
+                        <p class="fw-bold mb-0 fs-5" style="color:#C9A227;">
                             {{ $product[1] }}
                         </p>
                     </div>

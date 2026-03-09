@@ -6,7 +6,7 @@
             <div class="col-md-3">
                 <h5 class="footer-brand">Wings of Jewels</h5>
                 <p class="footer-text">
-                    Discover timeless elegance with our handcrafted jewellery.
+                    Discover timeless elegance with our beautiful jewellery collection.
                     Designed to celebrate your most precious moments.
                 </p>
             </div>
@@ -39,24 +39,32 @@
 
                 <p class="footer-contact">
                     <i class="bi bi-geo-alt"></i>
-                    123 Jewellery Street, India
+                      karuvarakund ,Malappuram 
                 </p>
 
                 <p class="footer-contact">
                     <i class="bi bi-telephone"></i>
-                    +91 98765 43210
+                    +91 7736893028
                 </p>
 
                 <p class="footer-contact">
                     <i class="bi bi-envelope"></i>
-                    support@wingsofjewels.com
+                    abiminju310@gmail.com
                 </p>
 
                 <!-- Social Icons -->
                 <div class="footer-social mt-3">
-                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://whatsapp.com/channel/0029Vb78cOdI7BeIwEXAzp32" 
+                        class="social-icon" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/wings_of_jewels___?igsh=MW5tb2JqZnhtNTNrdA==" 
+                        class="social-icon" 
+                        target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
                 </div>
             </div>
 

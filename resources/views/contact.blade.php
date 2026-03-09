@@ -18,42 +18,65 @@
 
     <div class="row g-5">
 
-        <!-- ===== FORM SECTION (LEFT) ===== -->
+        <!-- ===== FORM SECTION ===== -->
         <div class="col-lg-7">
-            <div class="card border-0 shadow-sm p-4 rounded-4">
+            <div class="contact-card p-4">
 
-                <form action="#" method="POST">
+                {{-- ✅ Success Message --}}
+                @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+                @endif
+
+                {{-- ❌ Error Message --}}
+                @if($errors->any())
+                <div class="alert alert-danger">
+                    <ul class="mb-0">
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+
+                <form action="{{ route('contact.send') }}" method="POST">
                     @csrf
 
                     <div class="row g-3 mb-3">
                         <div class="col-md-6">
                             <input type="text" name="name"
-                                   class="form-control form-control-lg rounded-3"
-                                   placeholder="Name" required>
+                                   class="form-control form-control-lg"
+                                   placeholder="Full Name"
+                                   value="{{ old('name') }}"
+                                   required>
                         </div>
 
                         <div class="col-md-6">
                             <input type="email" name="email"
-                                   class="form-control form-control-lg rounded-3"
-                                   placeholder="Email" required>
+                                   class="form-control form-control-lg"
+                                   placeholder="Email Address"
+                                   value="{{ old('email') }}"
+                                   required>
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <input type="text" name="phone"
-                               class="form-control form-control-lg rounded-3"
-                               placeholder="Phone number">
+                               class="form-control form-control-lg"
+                               placeholder="Phone Number"
+                               value="{{ old('phone') }}">
                     </div>
 
                     <div class="mb-3">
                         <textarea name="message" rows="6"
-                                  class="form-control form-control-lg rounded-3"
-                                  placeholder="Your Message"
-                                  required></textarea>
+                                  class="form-control form-control-lg"
+                                  placeholder="Write your message..."
+                                  required>{{ old('message') }}</textarea>
                     </div>
 
                     <button type="submit"
-                            class="btn btn-dark w-100 py-3 rounded-3 fw-semibold">
+                            class="btn btn-dark w-100 py-3 fw-semibold">
                         SEND MESSAGE
                     </button>
 
@@ -62,32 +85,18 @@
             </div>
         </div>
 
-
-        <!-- ===== CONTACT INFO (RIGHT) ===== -->
+        <!-- ===== MAP SECTION ===== -->
         <div class="col-lg-5">
-            <div class="ps-lg-4">
+            <div class="map-box">
 
-                <div class="mb-4">
-                    <h5 class="fw-semibold">Address</h5>
-                    <p class="text-muted">
-                        8016, Raj Textile Tower Block A,<br>
-                        Surat, Gujarat, India
-                    </p>
-                </div>
-
-                <div class="mb-4">
-                    <h5 class="fw-semibold">Phone</h5>
-                    <p class="text-muted">
-                        +91 6354 914 240
-                    </p>
-                </div>
-
-                <div class="mb-4">
-                    <h5 class="fw-semibold">Email</h5>
-                    <p class="text-muted">
-                        info@yourjewellery.com
-                    </p>
-                </div>
+                <iframe
+                    src="https://maps.google.com/maps?q=karuvarakundu%20malappuram&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="420"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
 
             </div>
         </div>
