@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-black shadow-sm py-3">
-    <div class="container align-items-center">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm py-3">
+    <div class="container-fluid align-items-center">
 
         <!-- Logo -->
         <a class="navbar-brand me-3" href="/">
