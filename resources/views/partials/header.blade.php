@@ -21,7 +21,7 @@
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse justify-content-end bg-black" id="mobileMenu">
 
-            <div class="d-flex flex-column flex-lg-row gap-3 gap-lg-4 nav-links mt-3 mt-lg-0">
+            <div class="d-flex flex-column flex-lg-row gap-3 gap-lg-4 nav-links mt-3 mt-lg-0 p3">
 
                 <a href="/" class="nav-item {{ request()->is('/') ? 'active-link' : '' }}">Home</a>
 
@@ -29,7 +29,7 @@
 
                 <a href="/contact" class="nav-item {{ request()->is('contact') ? 'active-link' : '' }}">Contact</a>
 
-                <a href="/admin/login" class="nav-item">Admin</a>
+                <!-- <a href="/admin/login" class="nav-item">Admin</a> -->
                 
             </div>
 
